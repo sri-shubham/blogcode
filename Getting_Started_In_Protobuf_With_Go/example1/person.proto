@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package main; // Name of package
+
+option go_package = "main"; // Name of the package generated code will use
+
+// Person : Schema describing a person
+message Person {
+  uint64 id = 1;
+  string email = 2;
+  bool is_active = 3;
+}
