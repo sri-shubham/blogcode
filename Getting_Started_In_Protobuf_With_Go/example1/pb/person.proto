@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package main; // Name of package
 
-option go_package = "main"; // Name of the package generated code will use
+option go_package = "pb"; // Name of the package generated code will use
 
 // Person : Schema describing a person
 message Person {
