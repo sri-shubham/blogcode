@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package main; // Name of package
+
+option go_package = "pb"; // Name of the package generated code will use
+
+service calculator {
+    rpc multiply(TwoNumbers) returns (Number) {}
+}
+
+message TwoNumbers {
+    int64 num1 = 1;
+    int64 num2 = 2;
+}
+
+message Number {
+    int64 num = 1;
+}
